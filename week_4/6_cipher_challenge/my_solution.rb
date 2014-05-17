@@ -117,8 +117,9 @@ p north_korean_cipher("ribx^wxst:$wsyxl%osvie,$xlir$neter,#xlir%xli%asvph!")
 p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw?")
 
 # Reflection
-
-
+# Our main strategy to refactor the code was to tackle the ciper becuase we believe that that was the biggest issue. It looked
+# extremely ineffienet to have it like that. 
+#
 
 
 
