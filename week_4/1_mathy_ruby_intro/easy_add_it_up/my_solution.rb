@@ -4,17 +4,32 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Jeremy Wong ].
 
 # 1. Pseudocode
-
-# What is the input?
-# What is the output? (i.e. What should the code return?)
-# What are the steps needed to solve the problem?
+#define total as method
+#go through every element of the array and add them all together
+#return sum of array 1
+#return sum of array 2
+#create new method called sentence_maker
+#go through every element in the array and join strings together
+#add punc. for sentence
 
 
 # 2. Initial Solution
+def total (array)
+	sum = 0
 
+	array.each {|x| sum = sum + x}
+	return sum
+end
+
+def sentence_maker (array)
+	array[0].capitalize!
+	array.join(" ") + "."
+
+
+end
 
 
 
