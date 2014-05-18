@@ -117,9 +117,20 @@ p north_korean_cipher("ribx^wxst:$wsyxl%osvie,$xlir$neter,#xlir%xli%asvph!")
 p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw?")
 
 # Reflection
-# Our main strategy to refactor the code was to tackle the ciper becuase we believe that that was the biggest issue. It looked
-# extremely ineffienet to have it like that. 
+# Our main strategy to refactor the code was to tackle the cipher becuase we believed that that was the biggest issue. It looked
+# extremely ineffienet to have it like that. So we decided to refactor that first. We decided to make an array list of the
+#rather than have the hash. From there, ....
 #
+#We faced our biggest issue trying to refactor the cipher portion of the code. We couldnt think of a more efficient way in
+#in doing so. It was also a bit diffcult in trying to figure out how our code would work with the "loop" we needed to implement.
+# For example, we were able to come up with a way to go back four spaces for all the letters except A - D. 
+#  I was having a little bit of trouble remembering what the index function did. But after some review and a brief
+#disccusion with my pairs, I was able quickly figure how to incorporate into our refactored code. 
+# I am semiconfident with this challneges learning compentenices. I feel like there is still some more material I need to review
+# because I am still unfamilar with all of the methods. Also, I need to become more comfortable with using Ruby Docs.
+#I enjoyed working with someone else becuase if this had to be done by myself, I would find myself stuck. 
+# Creating/Refactoring was pretty tedious because even though the code worked, we had to still change the code to make 
+# it more efficient and prettier. 
 
 
 

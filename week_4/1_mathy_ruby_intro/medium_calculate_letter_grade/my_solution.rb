@@ -45,9 +45,20 @@ end
 
 
 # 3. Refactored Solution
+# No need to refactor
 
 
 
 # 4. Reflection 
 
-This was similar . 
+# This was similar to an exercise we had to complete for Socrates so I found it to be a bit easier to do. However, I don't recall
+# if we had to use the each method as well, but I incorporated it into the code when working on the challenge. Because I used
+# the each method in the prior exercise, I was able to use it for this one as well. I didn't really have any questions because
+# of the prior knowledge I had.
+# I didn't learn any new tricks from this exercise, but it was definitely good practice because I felt like a forgot a lot of
+# the material from ruby.
+# I feel pretty confident about the learning competencies. With a little nudge, I was able to complete these exercises
+# without much trouble.
+# I enjoyed practicing the concepts of ruby again. 
+# There wasn't anything I found too tedious. I didn't have to really go through ruby docs since I knew I wanted to use the each
+# method for this problem.
