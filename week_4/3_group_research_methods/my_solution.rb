@@ -88,9 +88,12 @@ p my_array_deletion_method(i_want_pets, "a") == ["I", 4, "pets", "but", "I", "on
 p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# My strategy for my portion of this challenge was to use a similar strategy to the first couple of excercises
+# My strategy for my portion of this challenge was to use a similar strategy to the first couple of exercises
 # I worked on in this weeks challenges. I have become familiar with the each method, so I figured that the 
 # each method would suffice what I needed to do for my part. A problem I faced was when I was trying to modify
 # the values of the keys in the hash. I knew how to modify the elements of an array, but using the each method
-# on a hash was a bit of a curveball. However, after spending some time in office hours, I taught 
-# 
+# on a hash was a bit of a curveball. However, after spending some time in office hours, I taught in what I had to do.
+# Then it became pretty easy once I knew how to write the piece of syntax.  
+# I don't think I really learned anything knew other than from what I needed learn when modifying values. But 
+# I found this exercise to be pretty fun! It was nice having to work with one another to get a finished project. 
+# There wasn't anything that I found tedious. The exercise was pretty straight forward. 

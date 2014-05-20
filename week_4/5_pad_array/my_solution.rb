@@ -22,18 +22,32 @@
 
 
 
-# 3. Refactored Solution
-class Array
-def pad(min_size, val = nil)
-		new_array = self
-		[min_size - self.length, 0].max.times { new_array << val }
-		new_array
-end
 
-def pad!(min_size, val = nil)
-		[min_size - self.length, 0].max.times { self << val }
-		self
-	end
+#extending the arary class
+#monkey patching
+
+# 3. Refactored Solution
+class Array 
+    def pad(new_length, new_value=nil)
+        new_array = self.clone
+        if new_length <= self.length
+            return new_array
+        else
+            push_num = new_length - self.length
+            push_num.times{|x| new_array.push(new_value)}
+            new_array
+        end 
+    end
+
+    def pad!(new_length, new_value=nil)
+        if new_length <= self.length 
+            return self 
+        else
+            push_num = new_length - self.length 
+            push_num.times{|x| self.push(new_value)}
+            return self
+        end
+    end
 end
 
 
