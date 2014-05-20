@@ -35,7 +35,7 @@ class Array
         else
             push_num = new_length - self.length
             push_num.times{|x| new_array.push(new_value)}
-            new_array
+            return new_array
         end 
     end
 
@@ -52,3 +52,12 @@ end
 
 
 # 4. Reflection 
+# I had a lot of trouble trying to figure out how to begin this challenge. I think my biggest problem was trying to
+# figure out how to write the syntax. Also, I had to learn from an instructor/tutor that we would have to extending
+# the array class so that out pad method would work. 
+# After this challenge, I am feeling not that conifdent about the learning compeneticies. I still felt pretty lost
+# even when I was being helped tutored. 
+# It sucked that I wasn't able to to this by myself and that I got stuck on different parts. I didn't enjoy this
+# challenge and everything felt tedious. 
+
+
