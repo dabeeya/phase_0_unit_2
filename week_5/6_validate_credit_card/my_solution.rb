@@ -15,8 +15,23 @@
 # Don't forget to check on intialization for a card length
 # of exactly 16 digits
 class CreditCard
+	raise ArgumentError.new("The credit card number is not valid") if num.to_s.length != 16
+	@card_num = num
 
 end
+
+def double_digit 
+
+end
+
+def card_sum
+
+end
+
+def check_card
+
+end
+
 
 
 

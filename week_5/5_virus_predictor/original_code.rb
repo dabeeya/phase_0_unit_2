@@ -3,27 +3,34 @@
 # I worked on this challenge [by myself, with: ].
 
 # EXPLANATION OF require_relative
-#
-#
+# we use the require_relaitve to let ruby know that we want to correlate these two files so that we can test them
+
 require_relative 'state_data'
 
-class VirusPredictor
+class VirusPredictor #creates a new class VirusPredictor
 
-  def initialize(state_of_origin, population_density, population, region, regional_spread)
-    @state = state_of_origin
+  def initialize(state_of_origin, population_density, population, region, regional_spread) ##The initialize method initializes the state of the object where we can then create each instance variable.
+
+    @state = state_of_origin #creating instance variables
     @population = population
     @population_density = population_density
     @region = region
     @next_region = regional_spread
   end
 
-  def virus_effects  #HINT: What is the SCOPE of instance variables?
+  def virus_effects  #HINT: What is the SCOPE of instance variables? 
+    #creates method virus_effects which calls two other methods
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
-  private  #what is this?  what happens if it were cut and pasted above the virus_effects method
+  private  #what is this?  
+  #Private methods are meant to be undisturbed and unreachable
+  #If we move private above the virus_effect method, we will be unable to call it 
 
+
+  # This method takes the state's population data and calculates how many deaths could occur. The higher the 
+  # population density the more deaths.
   def predicted_deaths(population_density, population, state)
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -41,8 +48,9 @@ class VirusPredictor
 
   end
 
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread(population_density, state) # returns the predicted speed of spread by taking in the population density and state and formula
     speed = 0.0
+    case
 
     if @population_density >= 200
       speed += 0.5
@@ -79,3 +87,13 @@ california.virus_effects
 
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population], STATE_DATA["Alaska"][:region], STATE_DATA["Alaska"][:regional_spread]) 
 alaska.virus_effects
+
+
+######################### for all the states
+STATE_DATA.each do |state, data|
+    state = VirusPredictor.new(state, data[:population_density], data[:population], data[:region], data[:regional_spread])
+
+ state.virus_effects
+
+end
+
